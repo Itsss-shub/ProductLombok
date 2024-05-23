@@ -30,6 +30,7 @@ public class UserController {
 	public ResponseEntity<User> saveUser(@Valid@RequestBody User u){
 		
 		User ur = usi.saveUser(u);
+		System.out.println("User saved.....");
 		return new ResponseEntity<User> (ur,HttpStatus.OK);
 	}
 	
